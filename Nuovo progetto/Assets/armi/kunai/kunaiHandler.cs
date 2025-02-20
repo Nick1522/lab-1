@@ -9,6 +9,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         Rigidbody rigidbody = GetComponent<Rigidbody>();
         rigidbody.AddForce(transform.forward*100, ForceMode.VelocityChange);
+        Destroy(gameObject,5f);
     }
     
 }
